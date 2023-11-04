@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  api:
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/usr/src/app
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo
+    volumes:
+      - mongodb:/data/db
+
+volumes:
+  mongodb:
