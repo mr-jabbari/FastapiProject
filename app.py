@@ -1,4 +1,4 @@
-from FastAPI import app
+from FastAPIApp import app
 import uvicorn
 
 if __name__ == "__main__":

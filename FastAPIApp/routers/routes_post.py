@@ -7,6 +7,7 @@ router = APIRouter(
 )
 
 
-@router.get("/")
+@router.get("/test")
 def root():
-    return {"message": "this is posts"}
+    return {"message": "post routes is working"}
+
