@@ -19,4 +19,4 @@ app.include_router(routes_user.router)
 
 @app.get("/")
 async def root():
-    return {"message": "FastAPIApp is working"}
+    return {"message": "FastAPIApp is working!!"}
